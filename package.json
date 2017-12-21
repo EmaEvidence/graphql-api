@@ -5,7 +5,8 @@
   "author": "Ema Evidence",
   "license": "ISC",
   "scripts": {
-    "start": "node lib/index"
+    "start": "node lib/index",
+    "dev":  "nodemon --exec node lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,12 @@
   },
   "homepage": "https://github.com/EmaEvidence/graphql-api#readme",
   "dependencies": {
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "g": "^2.0.1",
+    "graphql": "^0.11.7",
     "mongodb": "^2.1.18",
+    "nodemon": "^1.14.1",
     "pg": "^6.0.1"
   },
   "devDependencies": {
